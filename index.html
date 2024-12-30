@@ -44,6 +44,81 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/symbol-hw05.svg#icon-heroicons-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="icons-burger-close" width="8" height="8">
+              <use href="./images/symbol-hw05.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile">
+            <ul class="list-nav-mobile">
+              <li class="item-mobile">
+                <a href="./index.html" class="mobile-item-link-studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="item-mobile">
+                <a href="" class="mobile-item-link">Portfolio</a>
+              </li>
+              <li class="item-mobile">
+                <a href="" class="mobile-item-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contactu-mobile">
+            <ul class="mobile-con-list">
+              <li class="mobile-con-item">
+                <a class="mobile-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-con-item">
+                <a class="mobile-add" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-icons">
+              <a href="#" class="mobile-link-icons">
+                <svg class="mobile-svg" width="24" height="24">
+                  <use
+                    href="./images/messengers-icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-icons">
+              <a href="" class="mobile-link-icons">
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/messengers-icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-icons">
+              <a href="" class="mobile-link-icons">
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/messengers-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-icons">
+              <a href="" class="mobile-link-icons">
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/messengers-icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -113,7 +188,7 @@
         </div>
       </section>
 
-      <section class="sec-our">
+      <section class="sec-our hidden">
         <div class="container">
           <h2 class="title-our">Our Team</h2>
           <ul class="team-list">
@@ -321,7 +396,7 @@
         </div>
       </section>
 
-      <section class="sec-our-portfolio">
+      <section class="sec-our-portfolio hidden">
         <div class="container">
           <h2 class="title-our-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -436,7 +511,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="sec-footer">
+    <footer class="sec-footer hidden">
       <div class="footer-container container">
         <div class="con-web-p">
           <a class="hero-title" href="./index.html"
@@ -506,7 +581,7 @@
       </div>
     </footer>
     <!-- model-overlay -->
-    <div class="modal-overlay is-open" data-modal>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="icons-modal" width="8" height="8">
@@ -591,5 +666,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
