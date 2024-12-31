@@ -128,10 +128,7 @@
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.team-list {
-  display: flex;
-  gap: 24px;
-}
+
 
 .item-our {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -158,10 +155,45 @@
   color: #2e2f42;
   letter-spacing: 0.02em;
 }
-.title-our-portfolio {
-  text-align: center;
-  margin-bottom: 72px;
+.team-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #f4f4fd;
 }
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.link-team-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-team-icons:hover,
+.link-team-icons:focus {
+  background-color: #404bbf;
+}
+.our-text {
+  text-align: center;
+
+  letter-spacing: 0.02em;
+  color: #434455;
+  line-height: 1.5;
+}
+/* section4 */
 .item-portfolio:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -198,42 +230,8 @@
 .item-portfolio:hover .overlay-text {
   transform: translateY(0);
 }
-.our-text {
-  text-align: center;
 
-  letter-spacing: 0.02em;
-  color: #434455;
-  line-height: 1.5;
-}
-.icons-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
-  margin-top: 8px;
-}
-.team-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: #f4f4fd;
-}
-.link-team-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  width: 40px;
-  height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-team-icons:hover,
-.link-team-icons:focus {
-  background-color: #404bbf;
-}
+
 
 .sec-our-portfolio {
   padding-top: 120px;
@@ -257,6 +255,8 @@
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+    margin-bottom: 72px;
 }
 
 .title-portfolio {
@@ -274,7 +274,7 @@
   font-size: 16px;
   color: #434455;
 }
-
+/* footer */
 .sec-footer {
   padding: 100px 0;
   background-color: #2e2f42;
