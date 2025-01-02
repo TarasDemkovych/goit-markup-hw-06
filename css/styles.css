@@ -235,7 +235,7 @@ img {
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: white;
   border-color: #ffffff;
   opacity: 0;
   visibility: hidden;
@@ -284,8 +284,8 @@ img {
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  max-width: 320px;
+  max-height: 640px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -298,7 +298,7 @@ img {
 .list-nav-mobile {
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
+  row-gap: 40px;
 }
 
 .mobile-item-link-studio {
@@ -961,7 +961,8 @@ footer .span-logo {
     .con-web-p {
       margin-right: 120px;
     }
-        .footer-container{margin-left: auto;}
+        .footer-container{margin-left: auto;
+        padding: 0 15px;}
         .con-media{margin-right: 80px;}
         .footer-text{margin: 0;}
 }
@@ -1146,8 +1147,9 @@ modal-overlay:not(.is-open) .modal {
 .container-terms {
   margin-bottom: 24px;
 }
-
+.mobile-castom-checkbox{align-items:center;}
 .castom-checkbox {
+ flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1177,6 +1179,7 @@ modal-overlay:not(.is-open) .modal {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
 }
 
 .link-privacy {
